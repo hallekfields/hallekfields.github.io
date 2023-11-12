@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: npm install and npm run CI commands
         run: |
+          cd angular-app
           npm i
           npm run test:headless
           npm run build:prod
